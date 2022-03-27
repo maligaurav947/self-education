@@ -4,13 +4,13 @@
 	<title>to-do list</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<body>
+<body> <!-- html body --->
 <h1>My To-Do List</h1>
 	<input type="text" placeholder="New item" />
 	<button id="add">Add</button>
 	<ol id="mylist"></ol>
 </body>
-<script>
+<script> // this is the jquery.
 	$(function() {
 		$("#add").on("click", function() {
 			//event handler
@@ -26,5 +26,9 @@
 			};
 		});
 	});
+	$("h1").on("click", function() {
+		// $(this).fadeToggle(1000);
+		$(this).slideToggle(1000);
+	})
 </script>
 </html>
