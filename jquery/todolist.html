@@ -14,14 +14,17 @@
 	$(function() {
 		$("#add").on("click", function() {
 			//event handler
-			var value = $("#text").val();
+			var value = $("input").val();
 			if (value != '') {
 				var elem = $("<li></li>").text(value);
 				$(elem).append("<button class='remove'>X</button>");
 				$("#mylist").append(elem);
 				$("input").val(""); //clear the input.
-			}
-		})
-	})
+				$(".remove").on("click", function() {
+					$(this).parent().remove();
+				});
+			};
+		});
+	});
 </script>
 </html>
