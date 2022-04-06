@@ -8,10 +8,13 @@
 <body>
 	<div id="container"></div>
 	<script type="text/babel">
-		ReactDOM.render(
-		<h1>hello react</h1>,
-		document.getElementById("container")
-		)
+		let num = 0;
+		function show() {
+			num++;
+			const element = <p>{num}</p>;
+			ReactDOM.render(element, document.getElementById('container'));
+		}
+		setInterval(show, 1000);
 	</script>
 </body>
 </html>
