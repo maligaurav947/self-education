@@ -52,6 +52,20 @@ section {
 	color: #fcfcfc;
 }
 
+input[type="number"] {
+    padding: 2px;
+    text-align: center;
+    width: 50px;
+}
+
+input[type="button"] {
+    background-color: #2493df;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+}
+
 footer {
 	margin-top: 10px;
 	color: gray;
