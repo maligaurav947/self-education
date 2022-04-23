@@ -1,11 +1,12 @@
-const chp = 5; // children ticket price.
-const adp = 12; // adults ticket price.
+var children = -2;
+var adults = 3;
 
-let children = 2; // number of children.
-let adults = 3; // number of adults.
+if (adults < 0) {
+    adults = 0;
+} 
+if (children < 0) {
+    children = 0;
+}
 
-let total; // total price.
-
-total = adults*12 + children*5; // calculate total price.
-
-console.log(total); // output the price to the console.
+var price = children*5 + adults*12;
+console.log(price)
