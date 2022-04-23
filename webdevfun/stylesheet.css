@@ -53,17 +53,18 @@ section {
 }
 
 input[type="number"] {
-    padding: 2px;
-    text-align: center;
-    width: 50px;
+	padding: 2px;
+	text-align: center;
+	width: 50px;
 }
 
 input[type="button"] {
-    background-color: #2493df;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    border: none;
+	background-color: #2493df;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	border: none;
+	height: 40px;
 }
 
 footer {
@@ -71,4 +72,13 @@ footer {
 	color: gray;
 	font-size: 14px;
 	text-align: center;
+}
+
+form {
+	display: flex;
+}
+
+.form-section {
+	flex: 1;
+	width: 90%
 }
