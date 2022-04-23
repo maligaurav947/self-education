@@ -17,6 +17,26 @@ ul {
 	padding-left: 30px;
 }
 
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border-color: 1px solid black;
+    padding: 10px;
+}
+
+th {
+    background-color: #2493df;
+    color: white;
+}
+
+table caption {
+    color: #2493df;
+    font-weight: bold;
+    text-align: left;
+}
+
 label {
 	font-size: 16px;
 	font-weight: bold;
