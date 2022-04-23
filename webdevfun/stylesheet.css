@@ -7,6 +7,10 @@ h1 {
 	letter-spacing: 2px;
 }
 
+img {
+	float: left;
+	margin-right: 10px;
+}
 strong {
 	color: blue;
 }
@@ -50,6 +54,11 @@ section {
 	background-color: #687373;
 	margin-top: 10px;
 	color: #fcfcfc;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 input[type="number"] {
