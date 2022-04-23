@@ -8,7 +8,11 @@ if (children < 0) {
     children = 0;
 }
 
-var price = children*5 + adults*12;
+function calc() {
+	children*5 + adults*12;
+}
+
+var price = calc();
 console.log(price)
 
 for (let i=1; i<=adults; i++) {
