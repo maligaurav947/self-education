@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
+import {useState} from 'react'; // added for number 6 : hooks
 
 // 0
 // default react id in ../public/index.html
@@ -97,4 +98,35 @@ class Bello extends React.Component {
 		return <h2>Bello {this.state.name};</h2>; 
 	}
 }
-ReactDOM.render(<Bello />, document.getElementById("state"))
+ReactDOM.render(<Bello />, document.getElementById("stat"))
+
+class Counter extends React.Component {
+	state = {
+		counter: 0
+	}
+	increment = () => {
+		this.setState({counter: this.state.counter+1});
+	}
+	render() {
+		return <div>
+		<p>{this.state.counter}</p>
+		<button onClick={this.increment}>Increment</button>
+		</div>
+	}
+}
+ReactDOM.render(<Counter />, document.getElementById("state"))
+// there were two examples of state. attention to the setState and onClick.
+
+
+// 6
+// hooks
+// earlier version of react allowed to use state only with class components. in recent iterations, hooks was introduced, allowing to use state inside of functional components.
+// we need to import {useState} first. added at the beginnig of this file.
+function Count() {
+	const [count, setCount] = useState(0);
+	function add() {
+		setCount(count+1);
+	}
+	return <div><p>{count}</p><button onClick={add}>add</button></div>;
+}
+ReactDOM.render(<Count />, document.getElementById('hooks'))
