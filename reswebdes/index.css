@@ -42,9 +42,19 @@ section {
 	text-align: center;
 }
 
-.feature {
+.features {
 	background: #FFFFFF;
 	color: #000000;
+}
+
+.feature {
+	display: inline-block;
+	width: 32%;
+	font-size: 18px;
+}
+
+.feature img {
+	width: 40%;
 }
 
 .quote {
