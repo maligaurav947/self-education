@@ -5,6 +5,38 @@ header {
 	text-align: center;
 }
 
+h1 {
+	font-size: 48px;
+	margin: 0 0 16px 0;
+}
+
+h2 {
+	font-weight: 300;
+	font-size: 24px;
+	margin: 0 0 16px 0;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 20px 0 20px;
+	max-width: 900px;
+}
+
+.btn-dl {
+	display: inline-block;
+	color: white;
+	background: #549DA0;
+	padding: 12px 16px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.btn-dl:hover {
+	background: #468486;
+}
+
 section {
 	padding: 40px 0;
 	text-align: center;
