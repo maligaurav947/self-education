@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="./index.css">
 		<link rel="stylesheet" href="./480px.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	</head>
 	<body>
 		<header>
@@ -16,6 +17,13 @@
 					<a href="#">Link 1</a>
 					<a href="#">Link 2</a>
 				</div>
+				<script>
+					$(function() {
+						$(".btn-dl").click(function() {
+							$(".submenu").slideToggle(500);
+						});
+					});
+				</script>
 		</div>
 		</header>
 		
