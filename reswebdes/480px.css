@@ -1,5 +1,10 @@
 @media screen and (max-width: 680px) {
 
+	.submenu {
+		width: 100%;
+		position: relative;
+	}
+
 	.btn-dl {
 		display: block;
 		font-size: 18px;
