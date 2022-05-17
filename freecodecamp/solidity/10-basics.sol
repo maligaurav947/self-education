@@ -43,6 +43,9 @@ contract FirstContract {
 }
 
 /*
-we could remove the get function and add public to the :string value: like this.
+1. we could remove the get function and add public to the :string value: like this.
 :string public value:
+2. we could also remove the constructor and write the string value like this.
+:string public vlaue = "myValue";
 */
+
