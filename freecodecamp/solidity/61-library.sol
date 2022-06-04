@@ -18,3 +18,4 @@ contract MyContract {
 	}
 }
 // if you deploy MyContract the Math library will deploy automaticly.
+// if there were two files. we could import the library using: '''import "./Math.sol";'''
