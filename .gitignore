@@ -1,2 +1,4 @@
 .DS_store
-react/my-app/node_modules
+**/node_modules
+**/package-lock.json
+**/package.json
