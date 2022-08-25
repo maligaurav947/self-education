@@ -4,6 +4,6 @@ using namespace std;
 int main() {
     //print "C++ is cool"
     cout << "C++ is cool" << endl;
-    cout << "Note: I had to add -lstdc++ to gcc" << endl;
+    cout << "Note: use \"gcc -lstdc++\" or \"g++\"" << endl;
     return 0;
 }
